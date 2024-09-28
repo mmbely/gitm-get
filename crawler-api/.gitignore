@@ -1,0 +1,85 @@
+# Global ignores
+
+# Mac system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+
+# IDE/Editor-specific files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+.history/
+
+# Backend (Node.js) specific ignores
+/node_modules/
+
+
+
+/backend/node_modules/
+backend/logs/
+backend/*.log
+backend/npm-debug.log*
+backend/yarn-debug.log*
+backend/yarn-error.log*
+
+# SQLite database files in backend
+backend/*.db
+backend/*.sqlite
+backend/*.sqlite3
+backend/*.db-journal
+backend/*.sqlite-journal
+backend/*.sqlite3-journal
+
+# Build output for the backend (if any)
+backend/build/
+backend/dist/
+
+# Environment variables for backend
+backend/.env
+backend/.env.local
+backend/.env.development.local
+backend/.env.test.local
+backend/.env.production.local
+
+# Frontend (React) specific ignores
+/frontend/node_modules/
+frontend/logs/
+frontend/*.log
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# Build output for the frontend
+frontend/build/
+frontend/dist/
+
+# Testing
+frontend/coverage/
+frontend/*.lcov
+
+# Parcel-bundler cache (if used in frontend)
+/frontend/.cache
+
+# Environment variables for frontend
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# Optional npm cache
+frontend/.npm/
+
+# eslint cache
+frontend/.eslintcache
+
+# React Native packager cache (if applicable)
+frontend/.expo/
+frontend/.expo-shared/
