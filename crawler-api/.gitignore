@@ -1,85 +1,39 @@
-# Global ignores
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Mac system files
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
 .DS_Store
+*.pem
 
-# Windows system files
-Thumbs.db
-ehthumbs.db
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# IDE/Editor-specific files
-.idea/
-.vscode/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.swp
-.history/
+# local env files
+.env*.local
 
-# Backend (Node.js) specific ignores
-/node_modules/
+# vercel
+.vercel
 
+# typescript
+*.tsbuildinfo
+next-env.d.ts
 
-
-/backend/node_modules/
-backend/logs/
-backend/*.log
-backend/npm-debug.log*
-backend/yarn-debug.log*
-backend/yarn-error.log*
-
-# SQLite database files in backend
-backend/*.db
-backend/*.sqlite
-backend/*.sqlite3
-backend/*.db-journal
-backend/*.sqlite-journal
-backend/*.sqlite3-journal
-
-# Build output for the backend (if any)
-backend/build/
-backend/dist/
-
-# Environment variables for backend
-backend/.env
-backend/.env.local
-backend/.env.development.local
-backend/.env.test.local
-backend/.env.production.local
-
-# Frontend (React) specific ignores
-/frontend/node_modules/
-frontend/logs/
-frontend/*.log
-frontend/npm-debug.log*
-frontend/yarn-debug.log*
-frontend/yarn-error.log*
-
-# Build output for the frontend
-frontend/build/
-frontend/dist/
-
-# Testing
-frontend/coverage/
-frontend/*.lcov
-
-# Parcel-bundler cache (if used in frontend)
-/frontend/.cache
-
-# Environment variables for frontend
-frontend/.env
-frontend/.env.local
-frontend/.env.development.local
-frontend/.env.test.local
-frontend/.env.production.local
-
-# Optional npm cache
-frontend/.npm/
-
-# eslint cache
-frontend/.eslintcache
-
-# React Native packager cache (if applicable)
-frontend/.expo/
-frontend/.expo-shared/
+# credentials
+google-credentials.json
